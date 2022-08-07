@@ -1,0 +1,25 @@
+<ripple android:color="@color/light_green_overlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="52dp"
+    android:height="52dp"
+    android:viewportWidth="52"
+    android:viewportHeight="52">
+      <path
+          android:pathData="M51,26C51,32.524 50.999,37.333 50.6,40.921C50.2,44.516 49.42,46.666 48.043,48.043C46.666,49.42 44.516,50.2 40.921,50.6C37.333,50.999 32.524,51 26,51C19.476,51 14.667,50.999 11.079,50.6C7.484,50.2 5.334,49.42 3.957,48.043C2.58,46.666 1.8,44.516 1.4,40.921C1.001,37.333 1,32.524 1,26C1,19.476 1.001,14.667 1.4,11.079C1.8,7.484 2.58,5.334 3.957,3.957C5.334,2.58 7.484,1.8 11.079,1.4C14.667,1.001 19.476,1 26,1C32.524,1 37.333,1.001 40.921,1.4C44.516,1.8 46.666,2.58 48.043,3.957C49.42,5.334 50.2,7.484 50.6,11.079C50.999,14.667 51,19.476 51,26Z"
+          android:strokeWidth="2"
+          android:fillColor="#ffffff"
+          android:strokeColor="@color/white"/>
+      <path
+          android:strokeWidth="1"
+          android:pathData="M23.227,8.5h6.364v3.364h-6.364z"
+          android:fillColor="#00000000"
+          android:strokeColor="@color/dark_green"/>
+      <path
+          android:pathData="M21,11C20.448,11 20,11.448 20,12V43C20,43.552 20.448,44 21,44H31.818C32.37,44 32.818,43.552 32.818,43V12C32.818,11.448 32.37,11 31.818,11H21ZM27.527,20L27.288,26.928L28.431,27.171L25.267,34.984L25.506,28.056L24.364,27.813L27.527,20Z"
+          android:fillColor="@color/dark_green"
+          android:fillType="evenOdd"/>
+    </vector>
+  </item>
+</ripple>

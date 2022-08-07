@@ -1,0 +1,273 @@
+<resources>
+    <!--<string name="text_butla_tutorial">Давай я проведу тебе экскурсию по приложению?</string>
+    <string name="text_questions">Если у тебя остались вопросы, задай их мне!</string>
+    <string name="text_education_welcome">Добро пожаловать, </string>
+    <string name="text_education_welcome_exclamation">!</string>
+    <string name="text_trash_porcess_trash_thrown_out">Отходы сданы </string>
+    <string name="text_trash_process_trash_thrown_out_count"> раз</string>
+    <string name="text_trash_process_level">Уровень: </string>
+    <string name="text_trash_process_bonus">Бонус: </string>
+    <string name="text_continue_auth">Какой вариант \nдля тебя \nболее удобен?</string>
+    <string name="text_continue_email_auth">Выбери нужный пункт</string>
+    <string name="text_email_cont_auth">Напиши, пожалуйста, \nадрес своей электронной почты, \nчтобы мы могли отправлять \nтебе интересные новости.</string>
+    <string name="todo">TODO</string>
+    <string name="butt_plastic_reading">Как подготовить пластиковую бутылку к сдаче</string>
+    <string name="butt_plastic_not_recycle">Какой пластик не подлежит переработке</string>
+    <string name="butt_plastic_mark">Виды маркировок пластика и что они означают</string>
+    <string name="butt_glass_reading">Как подготовить стеклянную тару к сдаче</string>
+    <string name="butt_zero_waste">Как начать жить по принципу Zero Waste</string>
+    <string name="butt_electrobiba">Спасут ли нас Электромобили</string>
+    <string name="butt_bonus">Бонусы</string>
+    <string name="butt_sign_out">Выйти</string>
+    <string name="butt_auth_signin">Войти</string>
+    <string name="butt_sponsors">Спонсоры</string>
+    <string name="button_edit_user_signin_">Войти</string>
+    <string name="myAlphaNumeric">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЮБЬТИМСЧЯ йцукенгшщзхъэждлорпавыфячсмитьбю-</string>
+    <string name="toast_log_out_msg">you are logged out</string>
+    <string name="storage_def_name"></string>
+    <string name="storage_def_city">Пермь</string>
+    <string name="location_permission_denied">location_permission_denied</string>
+    <string name="permission_required_toast">permission_required_toast</string>
+    <string name="permission_rationale_location">permission_rationale_location</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_authorization">AuthorizationActivity</string>
+    <string name="title_activity_my_announcements">MyAnnouncementsActivity</string>
+    <string name="tab_text_1">Активные</string>
+    <string name="tab_text_2">Заблокированные</string>
+    <string name="title_activity_all_announcements">AllAnnouncementsActivity</string>-->
+
+    <!--AllAnnouncementsActivity-->
+    <string name="title_announcements">Announcements</string>
+        <!--texts-->
+    <string name="announcements_date">Publication date: </string>
+    <string name="announcements_waste_types">Waste types: </string>
+    <string name="announcements_contact">Contact: </string>
+        <!--Tabs-->
+    <string name="announcements_tab_sell">For sale</string>
+    <string name="announcements_tab_buy">Purchased</string>
+    <!--AnnouncementCreatorActivity-->
+        <!--texts-->
+    <string name="announcement_creator_title">Title, briefly describe what you want buy or sell (up to 50 characters)</string>
+    <string name="announcement_creator_description">Description, describe what you want buy or sell in more detail (up to 10 000 characters)</string>
+    <string name="announcement_creator_waste_type">Select the described waste type (Selected are outlined on the perimeter)</string>
+    <string name="announcement_creator_contact">Contact, indicate at least one way to contact you</string>
+    <string name="announcement_creator_success">Announcement created</string>
+    <string name="announcement_creator_error">You can\'t publish announcements because there have been too many complaints about your announcements</string>
+        <!--RadioButtons-->
+    <string name="announcement_creator_rbutt_buy">Buy</string>
+    <string name="announcement_creator_rbutt_sell">Sell</string>
+        <!--Buttons-->
+    <string name="announcement_creator_butt_paste_email">Insert email from a Google account</string>
+    <string name="announcement_creator_butt_create">Create</string>
+        <!--hints-->
+    <string name="announcement_creator_hint_title">Title</string>
+    <string name="announcement_creator_hint_description">Description</string>
+    <string name="announcement_creator_hint_email">Email</string>
+    <string name="announcement_creator_hint_vk">link to Vkontakte</string>
+    <string name="announcement_creator_hint_tg">link to Telegram</string>
+    <string name="announcement_creator_hint_tel">Phone number</string>
+        <!--default texts-->
+    <string name="announcement_creator_def_units">rub/kg</string>
+        <!--errors texts-->
+    <string name="announcement_creator_error_title">No title</string>
+    <string name="announcement_creator_error_description">No description</string>
+    <!--AnnouncementViewerActivity-->
+    <!--texts-->
+    <string name="announcement_viewer_report_message">Enter the reason for the complaint</string>
+    <!--buttons-->
+    <string name="announcement_viewer_butt_report">Report</string>
+    <string name="announcement_viewer_butt_ok">OK</string>
+    <string name="announcement_viewer_butt_cancel">Cancel</string>
+    <!--AuthorizationActivity-->
+    <string name="title_authorization">AuthorizationActivity</string>
+        <!--texts-->
+    <string name="auth_birth">When is your birthday?</string>
+    <string name="auth_hi">Hi!</string>
+    <string name="auth_welcome">Let\'s get acquainted! \n My name is Seal. \nWhat\'s yours?</string>
+    <string name="auth_name">What\'s your name?</string>
+    <string name="auth_city">What city you are from?</string>
+    <string name="auth_skill">How long have you been doing separate waste collection?</string>
+    <string name="auth_confirmation">By clicking \"Next\", you agree to</string>
+    <string name="auth_local_data">Data in device memory:</string>
+    <string name="auth_cloud_data">Data in cloud storage:</string>
+    <string name="auth_data_level">level</string>
+    <string name="auth_data_garbage_counter">handovers</string>
+    <string name="auth_data_bonuses">bonuses</string>
+        <!--RadioButtons-->
+    <string name="auth_rbutt_newman">I\'m beginner</string>
+    <string name="auth_rbutt_adultman">I\'m advanced</string>
+    <string name="auth_rbutt_proman">I\'m a pro</string>
+    <string name="auth_rbutt_newman_full">i\'m beginner (first time I\'m doing separate waste collection)</string>
+    <string name="auth_rbutt_adultman_full">i\'m advanced (already engaged in separate waste collection)</string>
+    <string name="auth_rbutt_proman_full">i\'m a pro (I have been engaged in separate waste collection for several years)</string>
+        <!--Buttons-->
+    <string name="auth_butt_start">Next</string>
+    <string name="auth_butt_back">back</string>
+    <string name="auth_butt_sign_in">Sign in with Google</string>
+    <string name="auth_butt_skip">Skip</string>
+        <!--hints-->
+    <string name="auth_hint_name">Name</string>
+    <string name="auth_hint_city">City</string>
+        <!--errors texts-->
+    <string name="auth_error_date">Wrong date</string>
+    <!--EditUserActivity-->
+        <!--texts-->
+    <string name="edit_user_name">Name</string>
+    <string name="edit_user_city">City</string>
+    <string name="edit_user_email">Email</string>
+        <!--Buttons-->
+    <string name="edit_user_butt_save">Save</string>
+    <string name="edit_user_butt_back">Back</string>
+    <string name="edit_user_butt_delete_account">Delete account</string>
+    <string name="edit_user_butt_sign_out">Sign out</string>
+    <string name="edit_user_butt_sign_in">Sign in</string>
+    <!--LayoutForChooseData-->
+        <!--texts-->
+    <string name="choose_data_question">What data do you want to continue with?</string>
+        <!--Buttons-->
+    <string name="choose_data_butt_local">Local</string>
+    <string name="choose_data_butt_cloud">Cloud</string>
+    <!--LayoutForDeleteConfirmation-->
+        <!--texts-->
+    <string name="delete_confirmation_question">вы уверенны, что хотите удалить профиль?</string>
+        <!--Buttons-->
+    <string name="delete_confirmation_butt_no">No</string>
+    <string name="delete_confirmation_butt_yes">Yes</string>
+    <!--LearningFragment-->
+        <!--texts-->
+    <string name="learning_title_QA">Helpful tips and answers</string>
+        <!--Buttons-->
+    <string name="learning_butt_pl_prep">How to prepare plastic bottle for waste collection</string>
+    <string name="learning_butt_pl_marks">Types of plastic markings and what they mean</string>
+    <string name="learning_butt_pl_wrong">Which plastics are not recyclable</string>
+    <string name="learning_butt_gl_prep">How to prepare glassware for waste collection</string>
+    <string name="learning_butt_zw">How to start living the zero waste principle</string>
+    <!--MainActivity-->
+        <!--Buttons-->
+    <string name="map_butt_container">Containers</string>
+    <string name="map_butt_points">Points with people</string>
+    <string name="map_butt_plastic">Plastic</string>
+    <string name="map_butt_glass">Glass</string>
+    <string name="map_butt_metal">Metal</string>
+    <string name="map_butt_paper">Paper</string>
+    <string name="map_butt_food">Food waste</string>
+    <string name="map_butt_battery">Batteries</string>
+        <!--errors-->
+    <string name="main_error_navigation">Choose where you want to go</string>
+    <!--MyAnnouncementsActivity-->
+    <string name="title_my_announcements">My announcements</string>
+        <!--texts-->
+    <string name="my_announcements_publish">Published on </string>
+    <string name="my_announcements_at"> at </string>
+    <string name="my_announcement_sell">Sell</string>
+    <string name="my_announcement_buy">Buy</string>
+    <string name="my_announcement_deleted">Announcement deleted, pull down to refresh list</string>
+        <!--Tabs-->
+    <string name="my_announcements_tab_active">Published</string>
+    <string name="my_announcements_tab_blocked">Blocked</string>
+        <!--Buttons (fragment)-->
+    <string name="my_announcements_butt_create">Create announcement</string>
+    <!--PersonalAreaFragment-->
+        <!--Buttons-->
+    <string name="personal_area_butt_parameters">Parameters</string>
+    <string name="personal_area_butt_lvl">Level</string>
+    <string name="personal_area_butt_rating">Rating</string>
+    <string name="personal_area_butt_tg_bot">Telegram bot</string>
+    <string name="personal_area_butt_login">Log in</string>
+        <!--errors-->
+    <string name="personal_area_error_my_announcements">You are not logged in, you need to log in to continue</string>
+    <!--UpdActivity-->
+    <string name="upd_skip">Skip</string>
+    <string name="upd_load">Download</string>
+    <string name="upd_text_description">If the update is skipped, the application may be unstable</string>
+    <string name="upd_text_title">The latest version of the app is now available!</string>
+    <!--General strings-->
+    <string name="myAlphaNumeric">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЮБЬТИМСЧЯ йцукенгшщзхъэждлорпавыфячсмитьбю-</string>
+    <string name="error_name">Enter a name</string>
+    <string name="error_city_not_found">Sorry, we don\'t work in your city yet. Try a nearby major city</string>
+    <string name="success">Signed In successfully</string>
+    <string name="fail">Something went wrong</string>
+    <string name="app_name">EcoPoint</string>
+    <!--Menu title strings-->
+    <string name="title_learning">Info</string>
+    <string name="title_map">Map</string>
+    <string name="title_personal_area">Personal area</string>
+    <string name="title_view">View</string>
+    <string name="title_edit">Edit</string>
+    <string name="title_delete">Delete</string>
+    <!--Cities string array-->
+    <string-array name="Cities">
+        <item>Perm</item>
+        <item>Kazan</item>
+        <item>Novosibirsk</item>
+    </string-array>
+    <!--Month string array-->
+    <string-array name="Months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <!--tmp-->
+    <string name="prep_pl_first">wash the bottle thoroughly</string>
+    <string name="prep_pl_second">remove the label</string>
+    <string name="prep_pl_third">remove cover and ring</string>
+    <string name="prep_pl_fourth">crumple the bottle</string>
+    <string name="prep_pl_fifth">take the bottle to the recycling center</string>
+    <string name="prep_pl_text_first">It is not necessary to wash the bottle with detergent until it shines. It is enough to remove the remnants of drinks, food and fat — so that they do not stick to the plastic. And, of course, you should not recycle a bottle with unfinished contents</string>
+    <string name="prep_pl_text_second">this step is necessary if the label is shrinkable (completely fits the bottle). Labels of standard shape — narrow and encircling the bottle — do not need to be removed</string>
+    <string name="prep_pl_text_third">The lids are made of plastic other than the material of the bottle, and they cannot be recycled together. The lids can be left on the bottles when being recycled, or they can be collected separately and handed over to projects that collect only the lids.</string>
+    <string name="prep_pl_text_fourth">Squeeze the bottle so that it takes up less space and the collectors of recyclables do not have to "carry air”</string>
+    <string name="prep_pl_text_fifth">Check the marking of the plastic in the triangle and take it to the waste collection point with the appropriate fraction</string>
+
+    <string name="pl_mark_1">PETE, ПЭТ</string>
+    <string name="pl_mark_2">HDPE, ПНД</string>
+    <string name="pl_mark_3">PVC, ПВХ</string>
+    <string name="pl_mark_4">LDPE, ПВД</string>
+    <string name="pl_mark_5">PP, ПП</string>
+    <string name="pl_mark_6">PS</string>
+    <string name="pl_mark_7">O, Other</string>
+    <string name="pl_mark_extended_1">polyethylene terephthalate</string>
+    <string name="pl_mark_extended_2">high density polyethylene</string>
+    <string name="pl_mark_extended_3">polyvinyl chloride</string>
+    <string name="pl_mark_extended_4">high-pressure polyethylene</string>
+    <string name="pl_mark_extended_5">polypropylene</string>
+    <string name="pl_mark_extended_6">polystyrene</string>
+    <string name="pl_mark_extended_7">all other plastic</string>
+    <string name="pl_mark_description_1">PET packaging is of three types:</string>
+    <string name="pl_mark_description_2">Transparent bags, disposable tableware, cans, basins, bottle caps, cosmetic bottles, children\'s toys</string>
+    <string name="pl_mark_description_3">It is used for electrical insulation of wires and cables, production of sheets, pipes, films for stretch ceilings, \"vinyl\" records, artificial leathers, linoleum, etc.</string>
+    <string name="pl_mark_description_4">Basically, different types of film and tear-off caps from 20-liter bottles are made from this material</string>
+    <string name="pl_mark_description_5">Polypropylene is used to produce car bumpers, interior trim of cars, power tool housings, chocolate packaging, bags for rice, pasta and bread, plastic cups for tea and yogurt, lids for cans and bottles.</string>
+    <string name="pl_mark_description_6">Disposable tableware, substrate for vegetables and fruits, foam, videotapes</string>
+    <string name="pl_mark_description_7">Such plastic is often found in food containers and plastic bottles.</string>
+    <string name="pl_mark_extended_description_title_1_1">blown</string>
+    <string name="pl_mark_extended_description_title_1_2">leafy</string>
+    <string name="pl_mark_extended_description_title_1_3">tape</string>
+    <string name="pl_mark_extended_description_text_1_1">cans and bottles\nthere is a characteristic point at the bottom</string>
+    <string name="pl_mark_extended_description_text_1_2">containers, blisters are called PET-correctors in another way</string>
+    <string name="pl_mark_extended_description_text_2">It is important to separate <b>containers</b> and <b>plastic</b>, as they have different densities and are processed separately from each other accordingly</string>
+    <string name="pl_mark_extended_description_text_3">Such plastic can emit a number of toxic substances during operation, so it is better to abandon its use in everyday life or minimize it.</string>
+    <string name="pl_mark_extended_description_text_5">It will be quite difficult for an individual to get rid of this type of raw material.</string>
+    <string name="pl_mark_extended_description_text_6">It is important to note that <b>foamed</b> (fruit pallets, packaging foam) and <b>solid</b> (containers, lids) polystyrene, although they have the same marking - "06", are processed by different methods, therefore they are collected separately.</string>
+    <string name="pl_mark_extended_description_text_7">But products that come into contact with BPA are harmful to health. In no case do not use such products in microwave ovens!</string>
+    <string name="pl_mark_adding_description_1">Bottles are most often accepted. \nThis type of plastic is the safest and is accepted in garbage containers of almost any home.</string>
+    <string name="pl_mark_adding_description_2">Just as PET bottles, HDPE packaging is accepted at all plastic reception points</string>
+    <string name="pl_mark_adding_description_3">Often PVC plastic is not accepted from individuals, but if you have such plastic, try to find companies or projects that are engaged in the processing of this type of plastic.</string>
+    <string name="pl_mark_adding_description_4">The film is not accepted in all places, so if possible, replace the film with other reusable types of packages</string>
+    <string name="pl_mark_adding_description_5">This type is reluctantly taken for processing, in order to be taken, you need to accumulate several tons of plastic and send it to a processing plant</string>
+    <string name="pl_mark_adding_description_6">Just as 05 kind, it is difficult to hand over for recycling. Although it is processed in our country, this process is not profitable for many companies.</string>
+    <string name="pl_mark_adding_description_7">Just as 03 is very rarely recycled, it will be extremely difficult for an individual to find companies that accept this plastic</string>
+
+</resources>

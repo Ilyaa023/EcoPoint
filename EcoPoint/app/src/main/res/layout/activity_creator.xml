@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.exchange.creator.CreatorActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/announcement_creator_title" />
+
+            <EditText
+                android:id="@+id/create_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/announcement_creator_hint_title"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/title_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/announcement_creator_error_title"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/announcement_creator_description" />
+
+            <EditText
+                android:id="@+id/create_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="@string/announcement_creator_hint_description"
+                android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/description_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/announcement_creator_error_description"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tag_msg_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/announcement_creator_waste_type" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/buttons_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/plastic_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_plastic_active" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/glass_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_glass_active" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/metal_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_metal_active" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/paper_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_paper_active" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/food_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_food_active" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/battery_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/ic_battery_active" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RadioGroup
+                android:id="@+id/participant_rgroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/buy_rbutt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="@string/announcement_creator_rbutt_buy" />
+
+                <RadioButton
+                    android:id="@+id/sell_rbutt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/announcement_creator_rbutt_sell" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/creator_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/creator_units"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:text="@string/announcement_creator_def_units" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/connection_msg_err"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/announcement_creator_contact" />
+
+            <EditText
+                android:id="@+id/creator_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableEnd="@drawable/ic_email"
+                android:ems="10"
+                android:hint="@string/announcement_creator_hint_email"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/paste_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/announcement_creator_butt_paste_email"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/creator_vk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableEnd="@drawable/ic_vk"
+                android:ems="10"
+                android:hint="@string/announcement_creator_hint_vk"
+                android:inputType="textUri" />
+
+            <EditText
+                android:id="@+id/creator_tg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableEnd="@drawable/ic_tg"
+                android:ems="10"
+                android:hint="@string/announcement_creator_hint_tg"
+                android:inputType="textUri" />
+
+            <EditText
+                android:id="@+id/creator_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableEnd="@android:drawable/ic_menu_call"
+                android:ems="10"
+                android:hint="@string/announcement_creator_hint_tel"
+                android:inputType="phone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/create_button"
+                style="@style/GreenButtStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/announcement_creator_butt_create"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

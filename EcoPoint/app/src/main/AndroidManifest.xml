@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="eco.point.ecopoint">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EcoPoint">
+        <activity
+            android:name=".ui.activities.articles.tmp.PlMarkingsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activities.articles.tmp.PrepPlActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.UpdActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.exchange.allAnnouncements.AllAnnouncementsActivity"
+            android:exported="false"
+            android:label="@string/title_announcements"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EcoPoint.NoActionBar" />
+        <activity
+            android:name=".ui.activities.exchange.viewAnnouncement.AnnouncementViewerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.exchange.creator.CreatorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activities.exchange.myAnnouncements.MyAnnouncementsActivity"
+            android:exported="false"
+            android:label="@string/title_my_announcements"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EcoPoint.NoActionBar" />
+        <activity
+            android:name=".ui.activities.articles.ArticleActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EcoPoint" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".ui.activities.splash.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.authorization.AuthorizationActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:label="@string/title_authorization"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EcoPoint" />
+        <activity
+            android:name=".ui.activities.editUser.EditUserActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EcoPoint" />
+        <activity
+            android:name=".ui.activities.main.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EcoPoint" />
+    </application>
+
+</manifest>

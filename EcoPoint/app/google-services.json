@@ -1,0 +1,147 @@
+{
+  "project_info": {
+    "project_number": "1075567312838",
+    "firebase_url": "https://my-ecopoint-project-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "my-ecopoint-project",
+    "storage_bucket": "my-ecopoint-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075567312838:android:df2e3db5d9474e9833bcc7",
+        "android_client_info": {
+          "package_name": "eco.point.admin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075567312838-vscm5ga895u6ak3lsb5vvs1mog9k4cgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eco.point.admin",
+            "certificate_hash": "898fb8a5e13ebf2de902b07dfac31d3fd3e68044"
+          }
+        },
+        {
+          "client_id": "1075567312838-95969b9uka0l3njn6ng8bblmtuijkju7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAywxFa8bZowbZo7wXcKnYWadYuVPGepL4"
+        },
+        {
+          "current_key": "AIzaSyAtiD0_LwGGxJRKtHz93Qct-VzG-L_pqCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075567312838-95969b9uka0l3njn6ng8bblmtuijkju7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075567312838:android:18b091a42988c7ad33bcc7",
+        "android_client_info": {
+          "package_name": "eco.point.ecopoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075567312838-6o2s4hkbkba3slnu799sk0fag9vifh5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eco.point.ecopoint",
+            "certificate_hash": "898fb8a5e13ebf2de902b07dfac31d3fd3e68044"
+          }
+        },
+        {
+          "client_id": "1075567312838-95969b9uka0l3njn6ng8bblmtuijkju7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAywxFa8bZowbZo7wXcKnYWadYuVPGepL4"
+        },
+        {
+          "current_key": "AIzaSyAtiD0_LwGGxJRKtHz93Qct-VzG-L_pqCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075567312838-95969b9uka0l3njn6ng8bblmtuijkju7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075567312838:android:c123baade357854d33bcc7",
+        "android_client_info": {
+          "package_name": "eco.point.ep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075567312838-c7l88jsmo7cauqa1d58cduj686akd1m1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eco.point.ep",
+            "certificate_hash": "898fb8a5e13ebf2de902b07dfac31d3fd3e68044"
+          }
+        },
+        {
+          "client_id": "1075567312838-gqkll17rs5hrlbkqt6i7ah9cm3t5ma1f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eco.point.ep",
+            "certificate_hash": "134014f767a9c4daf13cdee3a28cccd9fdb380f4"
+          }
+        },
+        {
+          "client_id": "1075567312838-mvdjkkukr0m5p8456done49advsssnfr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "eco.point.ep",
+            "certificate_hash": "e13885cbe4d328277fc2e195ec046a4ec5125491"
+          }
+        },
+        {
+          "client_id": "1075567312838-95969b9uka0l3njn6ng8bblmtuijkju7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAywxFa8bZowbZo7wXcKnYWadYuVPGepL4"
+        },
+        {
+          "current_key": "AIzaSyAtiD0_LwGGxJRKtHz93Qct-VzG-L_pqCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075567312838-95969b9uka0l3njn6ng8bblmtuijkju7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

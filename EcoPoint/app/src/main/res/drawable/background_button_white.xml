@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/light_green_overlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+            <item android:state_pressed="false">
+                <shape android:shape="rectangle" tools:ignore="StateListReachable">
+                    <solid android:color="@color/white" />
+                    <corners
+                        android:radius="20dp"/>
+                </shape>
+            </item>
+            <item android:state_pressed="true">
+                <shape android:shape="rectangle" tools:ignore="StateListReachable">
+                    <solid android:color="@color/white_pressed" />
+                    <corners
+                        android:radius="20dp"/>
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>

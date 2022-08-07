@@ -1,0 +1,17 @@
+<ripple android:color="@color/light_green_overlay"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <item>
+    <vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="32dp"
+        android:height="32dp"
+        android:viewportWidth="32"
+        android:viewportHeight="32">
+      <path
+          android:pathData="M15.75,15.75m-15.75,0a15.75,15.75 0,1 1,31.5 0a15.75,15.75 0,1 1,-31.5 0"
+          android:fillColor="#81A684"/>
+      <path
+          android:pathData="M9.8438,9.8438L16.4062,24.2812V16.4062H24.9375L9.8438,9.8438Z"
+          android:fillColor="#07140D"/>
+    </vector>
+  </item>
+</ripple>

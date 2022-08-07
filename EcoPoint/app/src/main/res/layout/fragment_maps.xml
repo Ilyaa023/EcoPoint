@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:context=".ui.fragments.map.MapsFragment" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/map"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/map_plus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_map_plus" />
+
+        <ImageButton
+            android:id="@+id/map_minus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_map_minus" />
+
+        <ImageButton
+            android:id="@+id/map_find_me"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_find_me" />
+
+        <ImageButton
+            android:id="@+id/map_navigation"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/ic_navigation" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/hider_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green_overlay"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/point_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_point_info"
+        app:layout_constraintTop_toBottomOf="parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/point_info_hider_button"
+            android:layout_width="270dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            app:srcCompat="@android:drawable/arrow_down_float" />
+
+        <TextView
+            android:id="@+id/point_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/dark_green" />
+
+        <TextView
+            android:id="@+id/point_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/dark_green" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/map_plastic_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_plastic_active"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/map_glass_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_glass_active"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/map_metal_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_metal_active"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/map_paper_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_paper_active"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/map_food_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_food_active"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/map_battery_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_battery_active"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/point_hideable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/point_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/dark_green" />
+
+            <TextView
+                android:id="@+id/point_end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/dark_green" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/parent_of_hideable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_top_menu"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:translationY="-195dp"
+        tools:translationY="-198dp"
+        tools:layout_editor_absoluteX="7dp"
+        tools:layout_editor_absoluteY="7dp">
+
+        <LinearLayout
+            android:id="@+id/hideable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="40dp"
+            android:paddingBottom="32dp"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/butt_plastic"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_plastic_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_plastic" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/butt_glass"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_glass_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_glass" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/butt_metal"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_metal_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_metal" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/butt_paper"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_paper_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_paper" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/butt_food"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_food_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_food" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/butt_battery"
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_battery_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="12dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_battery" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="30dp"
+                android:paddingBottom="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/left_types_arrow"
+                        android:layout_width="15dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/ic_types_left_arrow" />
+                </LinearLayout>
+
+                <HorizontalScrollView
+                    android:id="@+id/map_scroll_view"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="320dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom|center_horizontal"
+                        android:orientation="horizontal">
+
+                        <!--<ImageButton
+                            android:id="@+id/butt_plastic"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_plastic_active" />
+
+                        <ImageButton
+                            android:id="@+id/butt_glass"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_glass_active" />
+
+                        <ImageButton
+                            android:id="@+id/butt_metal"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_metal_active" />
+
+                        <ImageButton
+                            android:id="@+id/butt_paper"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_paper_active" />
+
+                        <ImageButton
+                            android:id="@+id/butt_food"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_food_active" />
+
+                        <ImageButton
+                            android:id="@+id/butt_battery"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/ic_battery_active" />-->
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/right_types_arrow"
+                        android:layout_width="15dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/ic_types_right_arrow" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/containers_button"
+                    android:layout_width="120dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/background_button_green_little"
+                    android:drawableLeft="@drawable/ic_container"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="@string/map_butt_container"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_green" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/points_button"
+                    android:layout_width="120dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="22dp"
+                    android:background="@drawable/background_button_green_little"
+                    android:drawableLeft="@drawable/ic_filter_point_active"
+                    android:gravity="center"
+                    android:paddingLeft="12dp"
+                    android:text="@string/map_butt_points"
+                    android:textAllCaps="false"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_green"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/hider_button"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/background_button_green_bottom_radius"
+            app:srcCompat="@drawable/ic_map_filters_down" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

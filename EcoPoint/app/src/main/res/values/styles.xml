@@ -1,0 +1,28 @@
+<resources>
+
+    <style name="Widget.Theme.EP.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/light_green_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MyDatePicker">
+        <!-- Text color -->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!-- Divider color -->
+        <item name="colorControlNormal">@color/light_green_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.EcoPoint.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/light_green_overlay</item>
+    </style>
+
+    <style name="Widget.Theme.EcoPoint.ButtonBar.Fullscreen" parent="">
+        <item name="android:background">@color/light_green_overlay</item>
+        <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragments.learning.LearningFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_header"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/learning_title_QA"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/preparation_plastic_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="135dp"
+                    android:textSize="14sp"
+                    android:text="@string/learning_butt_pl_prep"
+                    android:background="@drawable/ic_article_plastic_preparation" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/plastic_markings_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="135dp"
+                    android:textSize="14sp"
+                    android:text="@string/learning_butt_pl_marks"
+                    android:background="@drawable/ic_article_plastic_markings" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/not_recycle_plastic_article"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="135dp"
+                    android:textSize="14sp"
+                    android:text="@string/learning_butt_pl_wrong"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_wrong_plastic" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="28dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/preparation_glass_article"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"
+                        android:paddingTop="70dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="@string/learning_butt_gl_prep"
+                        android:background="@drawable/ic_article_preparing_glass" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/zero_waste_article"
+                        android:layout_width="140dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/dark_green"
+                        android:paddingTop="70dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:gravity="center"
+                        android:textSize="14sp"
+                        android:text="@string/learning_butt_zw"
+                        android:background="@drawable/ic_zero_waste" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <!--<ProgressBar
+            android:id="@+id/articles_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/articlesView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" />
+        </ScrollView>-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

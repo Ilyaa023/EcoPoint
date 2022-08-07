@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:id="@+id/refresh"
+    tools:context=".ui.fragments.personalArea.PersonalAreaFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/background_white_bottom_radius"
+                android:gravity="bottom|center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/background_avatar_ring"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/Avatar"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_default_userpic" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/dark_green"
+                    android:textSize="20sp"
+                    android:maxLines="1"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/EditButt"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:gravity="center|center_vertical"
+                    android:text="@string/personal_area_butt_parameters"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lvlButt"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/background_light_green"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/personal_area_butt_lvl"
+                            android:textColor="@color/dark_green" />
+
+                        <TextView
+                            android:id="@+id/lvlButtCounter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="23sp"
+                            android:paddingBottom="17dp"
+                            android:paddingRight="2dp"
+                            android:textColor="@color/dark_green"
+                            android:background="@drawable/ic_level" />
+
+                        <TextView
+                            android:id="@+id/lvlButtComplete"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/dark_green" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ratingButt"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:background="@drawable/background_light_green"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/personal_area_butt_rating"
+                            android:textColor="@color/dark_green" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/ic_medal" />
+
+                        <TextView
+                            android:id="@+id/ratingNum"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/dark_green" />
+                    </LinearLayout>
+
+                    <!--<Button
+                        android:id="@+id/button3"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0"
+                        android:drawableTop="@drawable/ic_button_lvl"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/butt_lvl"
+                        android:textColor="@color/dark_green" />
+
+                    <Button
+                        android:id="@+id/button"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0"
+                        android:drawableTop="@drawable/ic_button_treestar"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/butt_rating"
+                        android:textColor="@color/dark_green" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/my_announcements_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_light_green"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/title_my_announcements"
+                android:textColor="@color/dark_green" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/all_announcements_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_light_green"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/title_announcements"
+                android:textColor="@color/dark_green" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <!--<androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button3"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:background="@drawable/light_green_little_layout_background"
+                    android:drawableTop="@drawable/ic_money"
+                    android:paddingTop="10dp"
+                    android:text="@string/butt_sponsors"
+                    android:textColor="@color/dark_green"
+                    android:textSize="10sp" />-->
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tg_bot_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/background_light_green_little"
+                    android:clickable="true"
+                    android:drawableTop="@drawable/ic_tg"
+                    android:focusable="true"
+                    android:paddingTop="10dp"
+                    android:text="@string/personal_area_butt_tg_bot"
+                    android:textAllCaps="false"
+                    android:textColor="@color/dark_green"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/sposnor_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/light_green_little_layout_background"
+                    android:drawableTop="@drawable/ic_money"
+                    android:gravity="center|center_vertical"
+                    android:paddingTop="10dp"
+                    android:text="@string/sponsors"
+                    android:textColor="@color/dark_green"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/tg_bot_button"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/light_green_little_layout_background"
+                    android:gravity="center|center_vertical"
+                    android:paddingTop="10dp"
+                    android:text="Telegram"
+                    android:textColor="@color/dark_green"
+                    android:textSize="10sp" />
+
+            </LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
