@@ -36,6 +36,7 @@
         <item name="colorAccent">@color/green</item>
         <item name="android:background">@drawable/background_button_green</item>
     </style>
+
     <style name="WhiteButtonStyle" parent="@style/Widget.AppCompat.Button.Colored">
         <item name="android:background">@drawable/background_button_white</item>
     </style>
@@ -50,7 +51,7 @@
         <item name="colorControlActivated">@color/dark_green</item>
 
         <item name="buttonTint">@color/green</item>
-        <item name="android:button" >@drawable/selector_radiobutton_green_dark_green</item>
+        <item name="android:button">@drawable/selector_radiobutton_green_dark_green</item>
     </style>
 
     <style name="Theme.EcoPoint.NoActionBar">

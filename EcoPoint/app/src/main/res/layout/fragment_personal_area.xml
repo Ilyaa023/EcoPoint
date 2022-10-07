@@ -79,7 +79,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:visibility="gone">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -93,9 +94,9 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:background="@drawable/background_light_green"
                         android:clickable="true"
                         android:focusable="true"
-                        android:background="@drawable/background_light_green"
                         android:orientation="vertical">
 
                         <TextView
@@ -112,13 +113,13 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
                             android:layout_marginTop="20dp"
+                            android:background="@drawable/ic_level"
                             android:gravity="center"
-                            android:textStyle="bold"
-                            android:textSize="23sp"
-                            android:paddingBottom="17dp"
                             android:paddingRight="2dp"
+                            android:paddingBottom="17dp"
                             android:textColor="@color/dark_green"
-                            android:background="@drawable/ic_level" />
+                            android:textSize="23sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/lvlButtComplete"
@@ -135,9 +136,9 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
+                        android:background="@drawable/background_light_green"
                         android:clickable="true"
                         android:focusable="true"
-                        android:background="@drawable/background_light_green"
                         android:orientation="vertical">
 
                         <TextView
@@ -193,27 +194,27 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/my_announcements_button"
-                style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/background_light_green"
-                android:clickable="true"
-                android:focusable="true"
-                android:text="@string/title_my_announcements"
-                android:textColor="@color/dark_green" />
-
-            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/all_announcements_button"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/background_light_green"
+                android:background="@drawable/background_button_white_big"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/title_announcements"
+                android:textColor="@color/dark_green" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/banned_announcements_button"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/background_button_white_big"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/title_banned_announcements"
                 android:textColor="@color/dark_green" />
 
             <LinearLayout
@@ -247,7 +248,7 @@
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/background_light_green_little"
                     android:clickable="true"
-                    android:drawableTop="@drawable/ic_tg"
+                    android:drawableTop="@drawable/ic_tg_colored"
                     android:focusable="true"
                     android:paddingTop="10dp"
                     android:text="@string/personal_area_butt_tg_bot"

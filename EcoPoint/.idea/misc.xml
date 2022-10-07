@@ -3,6 +3,29 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/background_header.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/background_header_green.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/background_header_white.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_battery_idle.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_email.xml" value="0.136" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_food_idle.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_glass_idle.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_metal_idle.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_paper_idle.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_plastic_idle.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_tg.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/drawable/ic_tg_colored.xml" value="0.1" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/activity_all_announcements.xml" value="0.19202898550724637" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/activity_announcement_viewer.xml" value="0.176" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/activity_article.xml" value="0.19202898550724637" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/activity_authorization.xml" value="0.19202898550724637" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/activity_creator.xml" value="0.252465483234714" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/activity_my_announcements.xml" value="0.19202898550724637" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/activity_prep_gl.xml" value="0.19202898550724637" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/activity_prep_pl.xml" value="0.19202898550724637" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/fragment_maps.xml" value="0.264" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/fragment_my_announcements.xml" value="0.19202898550724637" />
+        <entry key="..\:/Sources/AndroidProjects/EcoPoint/EcoPoint/app/src/main/res/layout/fragment_personal_area.xml" value="0.264" />
         <entry key="..\:/Sources/AndroidProjects/EcoPoint/app/src/main/res/drawable-v24/background_edittext_green.xml" value="0.129" />
         <entry key="..\:/Sources/AndroidProjects/EcoPoint/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.148" />
         <entry key="..\:/Sources/AndroidProjects/EcoPoint/app/src/main/res/drawable-v24/ic_lb_head_back.xml" value="0.159" />

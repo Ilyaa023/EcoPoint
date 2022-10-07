@@ -1,88 +1,45 @@
 <resources>
-    <!--<string name="text_butla_tutorial">Давай я проведу тебе экскурсию по приложению?</string>
-    <string name="text_questions">Если у тебя остались вопросы, задай их мне!</string>
-    <string name="text_education_welcome">Добро пожаловать, </string>
-    <string name="text_education_welcome_exclamation">!</string>
-    <string name="text_trash_porcess_trash_thrown_out">Отходы сданы </string>
-    <string name="text_trash_process_trash_thrown_out_count"> раз</string>
-    <string name="text_trash_process_level">Уровень: </string>
-    <string name="text_trash_process_bonus">Бонус: </string>
-    <string name="text_continue_auth">Какой вариант \nдля тебя \nболее удобен?</string>
-    <string name="text_continue_email_auth">Выбери нужный пункт</string>
-    <string name="text_email_cont_auth">Напиши, пожалуйста, \nадрес своей электронной почты, \nчтобы мы могли отправлять \nтебе интересные новости.</string>
-    <string name="todo">TODO</string>
-    <string name="butt_plastic_reading">Как подготовить пластиковую бутылку к сдаче</string>
-    <string name="butt_plastic_not_recycle">Какой пластик не подлежит переработке</string>
-    <string name="butt_plastic_mark">Виды маркировок пластика и что они означают</string>
-    <string name="butt_glass_reading">Как подготовить стеклянную тару к сдаче</string>
-    <string name="butt_zero_waste">Как начать жить по принципу Zero Waste</string>
-    <string name="butt_electrobiba">Спасут ли нас Электромобили</string>
-    <string name="butt_bonus">Бонусы</string>
-    <string name="butt_sign_out">Выйти</string>
-    <string name="butt_auth_signin">Войти</string>
-    <string name="butt_sponsors">Спонсоры</string>
-    <string name="myAlphaNumeric">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЮБЬТИМСЧЯйцукенгшщзхъэждлорпавыфячсмитьбю-</string>
-    <string name="toast_log_out_msg">you are logged out</string>
-    <string name="storage_def_name"></string>
-    <string name="storage_def_city">Пермь</string>
-    <string name="location_permission_denied">location_permission_denied</string>
-    <string name="permission_required_toast">permission_required_toast</string>
-    <string name="permission_rationale_location">permission_rationale_location</string>
-    <string name="title_activity_splash">SplashActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_authorization">AuthorizationActivity</string>
-    <string name="title_activity_my_announcements">MyAnnouncementsActivity</string>
-    <string name="tab_text_1">Активные</string>
-    <string name="tab_text_2">Заблокированные</string>
-    <string name="title_activity_all_announcements">AllAnnouncementsActivity</string>-->
-
-    <!--AllAnnouncementsActivity-->
-    <string name="title_announcements">Объявления</string>
-    <!--AnnouncemetViewerActivity-->
-        <!--texts-->
-    <string name="announcements_date">Дата публикации: </string>
-    <string name="announcements_waste_types">Типы отходов: </string>
-    <string name="announcements_contact">Связаться: </string>
-        <!--Tabs-->
-    <string name="announcements_tab_sell">Продается</string>
-    <string name="announcements_tab_buy">Покупается</string>
     <!--AnnouncementCreatorActivity-->
-        <!--texts-->
-    <string name="announcement_creator_title">Заголовок, кратко опишите что вы хотите купить или продать (до 50 символов)</string>
-    <string name="announcement_creator_description">Описание, опишите что вы хотите купить или продать более подробно (до 10 000 символов)</string>
-    <string name="announcement_creator_waste_type">Выберите нужный тип отходов (выбранные очерчены по периметру)</string>
-    <string name="announcement_creator_contact">Связь, укажите хотя бы один способ связаться с вами</string>
-    <string name="announcement_creator_success">Объявление создано</string>
+    <string name="announcement_creator_title">Коротко опиши, что ты хочешь купить или продать (до 50 символов)</string>
+    <string name="announcement_creator_description">Опиши, что ты хочешь купить или продать подробно (до 10 000 символов)</string>
+    <string name="announcement_creator_waste_type">Выбери нужный вид отходов</string>
+    <string name="announcement_creator_cost">Укажи стоимость</string>
+    <string name="announcement_creator_contact">Укажи способы связи</string>
+    <string name="announcement_creator_success">Объявление создано, для обновления списка перезагрузите страницу</string>
     <string name="announcement_creator_error">Вы не можете публиковать объявления, так как на ваши объявления было слишком много жалоб</string>
-        <!--RadioButtons-->
     <string name="announcement_creator_rbutt_buy">Купить</string>
     <string name="announcement_creator_rbutt_sell">Продать</string>
-        <!--Buttons-->
     <string name="announcement_creator_butt_paste_email">Вставить почту из Google аккаунта</string>
     <string name="announcement_creator_butt_create">Создать</string>
-        <!--hints-->
     <string name="announcement_creator_hint_title">Заголовок</string>
     <string name="announcement_creator_hint_description">Описание</string>
     <string name="announcement_creator_hint_email">Электронная почта</string>
     <string name="announcement_creator_hint_vk">Ссылка на аккаунт ВКонтакте</string>
     <string name="announcement_creator_hint_tg">Ссылка на аккаунт Telegram</string>
     <string name="announcement_creator_hint_tel">Номер телефона</string>
-        <!--default texts-->
     <string name="announcement_creator_def_units">руб/кг</string>
-        <!--errors texts-->
     <string name="announcement_creator_error_title">Нет заголовка</string>
     <string name="announcement_creator_error_description">Нет описания</string>
+    <!--AnnouncementsActivity-->
+    <string name="title_announcements">Объявления</string>
+    <string name="ants_waste_types">Виды отходов</string>
+    <string name="ants_ants_types">Виды объявлений</string>
+    <string name="ants_my_ants">Мои</string>
+    <string name="announcements_butt_create">Создать</string>
     <!--AnnouncementViewerActivity-->
-        <!--texts-->
     <string name="announcement_viewer_report_message">Укажите причину жалобы</string>
-        <!--buttons-->
     <string name="announcement_viewer_butt_report">Пожаловаться</string>
     <string name="announcement_viewer_butt_ok">Ок</string>
     <string name="announcement_viewer_butt_cancel">Отмена</string>
+    <string name="announcement_viewer_wants">Хочет</string>
+    <string name="announcements_publish">Опубликовано </string>
+    <string name="announcement_sell">Продам</string>
+    <string name="announcement_buy">Куплю</string>
+    <string name="announcement_deleted">Объявление удалено, чтобы обновить список, потяните вниз</string>
+    <string name="announcement_viewer_price">Цена</string>
+    <string name="announcement_viewer_connections">Способы связи</string>
     <!--AuthorizationActivity-->
     <string name="title_authorization">AuthorizationActivity</string>
-        <!--texts-->
     <string name="auth_birth">Когда у тебя день рождения?</string>
     <string name="auth_hi">Привет!</string>
     <string name="auth_welcome">Давай знакомиться! \n Меня зовут Тюлень. \nА тебя?</string>
@@ -95,57 +52,44 @@
     <string name="auth_data_level">уровень</string>
     <string name="auth_data_garbage_counter">сдачи</string>
     <string name="auth_data_bonuses">бонусы</string>
-        <!--RadioButtons-->
     <string name="auth_rbutt_newman">Я новичок</string>
     <string name="auth_rbutt_adultman">Я продвинутый</string>
     <string name="auth_rbutt_proman">Я профи</string>
     <string name="auth_rbutt_newman_full">Я новичок (в первый раз занимаюсь раздельным сбором отходов)</string>
     <string name="auth_rbutt_adultman_full">Я продвинутый (уже занимался раздельным сбором отходов)</string>
     <string name="auth_rbutt_proman_full">Я профи (занимаюсь раздельным сбором отходов несколько лет)</string>
-        <!--Buttons-->
     <string name="auth_butt_start">Далее</string>
     <string name="auth_butt_back">Назад</string>
     <string name="auth_butt_sign_in">Войти с помощью Google</string>
     <string name="auth_butt_skip">Пропустить</string>
-        <!--hints-->
     <string name="auth_hint_name">Имя</string>
     <string name="auth_hint_city">Город</string>
-        <!--errors texts-->
     <string name="auth_error_date">Неверная дата</string>
     <!--EditUserActivity-->
-        <!--texts-->
     <string name="edit_user_name">Имя</string>
     <string name="edit_user_city">Город</string>
     <string name="edit_user_email">Почта</string>
-        <!--Buttons-->
     <string name="edit_user_butt_save">Сохранить</string>
     <string name="edit_user_butt_back">Назад</string>
     <string name="edit_user_butt_delete_account">Удалить профиль</string>
     <string name="edit_user_butt_sign_out">Выход</string>
     <string name="edit_user_butt_sign_in">Войти</string>
     <!--LayoutForChooseData-->
-        <!--texts-->
     <string name="choose_data_question">С какими данными вы хотите продолжить?</string>
-        <!--Buttons-->
     <string name="choose_data_butt_local">Память</string>
     <string name="choose_data_butt_cloud">Облако</string>
     <!--LayoutForDeleteConfirmation-->
-        <!--texts-->
     <string name="delete_confirmation_question">вы уверенны, что хотите удалить профиль?</string>
-        <!--Buttons-->
     <string name="delete_confirmation_butt_no">Нет</string>
     <string name="delete_confirmation_butt_yes">Да</string>
     <!--LearningFragment-->
-        <!--texts-->
     <string name="learning_title_QA">Полезные советы и ответы</string>
-        <!--Buttons-->
     <string name="learning_butt_pl_prep">Как подготовить пластиковую бутылку к сдаче</string>
     <string name="learning_butt_pl_marks">Виды маркировок пластика и что они означают</string>
     <string name="learning_butt_pl_wrong">Какой пластик не подлежит переработке</string>
     <string name="learning_butt_gl_prep">Как подготовить стеклянную тару к сдаче</string>
     <string name="learning_butt_zw">Как начать жить по принципу zero waste</string>
     <!--MainActivity-->
-        <!--Buttons-->
     <string name="map_butt_container">Контейнеры</string>
     <string name="map_butt_points">Пункты с людьми</string>
     <string name="map_butt_plastic">Пластик</string>
@@ -154,29 +98,15 @@
     <string name="map_butt_paper">Бумага</string>
     <string name="map_butt_food">Пищевые отходы</string>
     <string name="map_butt_battery">Батарейки</string>
-        <!--errors-->
     <string name="main_error_navigation">Выберите точку, куда хотите отправиться</string>
-    <!--MyAnnouncementsActivity-->
-    <string name="title_my_announcements">Мои объявления</string>
-        <!--texts-->
-    <string name="my_announcements_publish">Опубликовано </string>
-    <string name="my_announcements_at"> в </string>
-    <string name="my_announcement_sell">Продам</string>
-    <string name="my_announcement_buy">Куплю</string>
-    <string name="my_announcement_deleted">Объявление удалено, чтобы обновить список, потяните вниз</string>
-        <!--Tabs-->
-    <string name="my_announcements_tab_active">Активные</string>
-    <string name="my_announcements_tab_blocked">Заблокированные</string>
-        <!--Buttons (fragment)-->
-    <string name="my_announcements_butt_create">Создать объявление</string>
+    <!--BannedAnnouncementsActivity-->
+    <string name="title_banned_announcements">Заблокированные объявления</string>
     <!--PersonalAreaFragment-->
-        <!--Buttons-->
     <string name="personal_area_butt_parameters">Параметры</string>
     <string name="personal_area_butt_lvl">Уровень</string>
     <string name="personal_area_butt_rating">Рейтинг</string>
     <string name="personal_area_butt_tg_bot">Telegram бот</string>
     <string name="personal_area_butt_login">Войти</string>
-        <!--errors-->
     <string name="personal_area_error_my_announcements">Вы не вошли в аккаунт, для продолжения необходимо войти</string>
     <!--General strings-->
     <string name="myAlphaNumeric">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЮБЬТИМСЧЯ йцукенгшщзхъэждлорпавыфячсмитьбю-</string>
@@ -264,6 +194,13 @@
     <string name="pl_mark_adding_description_5">Данный вид неохотно берут на переработку, для того чтобы его взяли, нужно накопить несколько тонн пластика и отправить на перерабатывающий завод</string>
     <string name="pl_mark_adding_description_6">Так же как и 05 вид сложно сдать на переработку. Хоть он и перерабатывается у нас в стране, этот процесс - не рентабелен для многих компаний.</string>
     <string name="pl_mark_adding_description_7">Так же как и 03 очень редко перерабатывается, физ лицу крайне трудно будет отыскать компании, принимающие этот пластик</string>
+
+    <string name="prep_gl_first">Сполоснуть стекло от остатков пищи или других продуктов</string>
+    <string name="prep_gl_second">По возможности снять крышки со стеклянных банок</string>
+    <string name="prep_gl_third">Отнести тару в пункт сдачи отходов</string>
+    <string name="prep_gl_text_second">Кольца, дозаторы и этикетки с бутылки (емкости) снимать не нужно</string>
+    <string name="prep_gl_text_third">Если же стекло битое, то лучше сложить его в отдельную емкость. Например, в такую же стеклянную баночку.</string>
+    <!--Update-->
     <string name="upd_skip">Пропустить</string>
     <string name="upd_load">Установить</string>
     <string name="upd_text_description">Если обновление пропустить, то приложение может работать нестабильно</string>

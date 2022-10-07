@@ -1,88 +1,45 @@
 <resources>
-    <!--<string name="text_butla_tutorial">Давай я проведу тебе экскурсию по приложению?</string>
-    <string name="text_questions">Если у тебя остались вопросы, задай их мне!</string>
-    <string name="text_education_welcome">Добро пожаловать, </string>
-    <string name="text_education_welcome_exclamation">!</string>
-    <string name="text_trash_porcess_trash_thrown_out">Отходы сданы </string>
-    <string name="text_trash_process_trash_thrown_out_count"> раз</string>
-    <string name="text_trash_process_level">Уровень: </string>
-    <string name="text_trash_process_bonus">Бонус: </string>
-    <string name="text_continue_auth">Какой вариант \nдля тебя \nболее удобен?</string>
-    <string name="text_continue_email_auth">Выбери нужный пункт</string>
-    <string name="text_email_cont_auth">Напиши, пожалуйста, \nадрес своей электронной почты, \nчтобы мы могли отправлять \nтебе интересные новости.</string>
-    <string name="todo">TODO</string>
-    <string name="butt_plastic_reading">Как подготовить пластиковую бутылку к сдаче</string>
-    <string name="butt_plastic_not_recycle">Какой пластик не подлежит переработке</string>
-    <string name="butt_plastic_mark">Виды маркировок пластика и что они означают</string>
-    <string name="butt_glass_reading">Как подготовить стеклянную тару к сдаче</string>
-    <string name="butt_zero_waste">Как начать жить по принципу Zero Waste</string>
-    <string name="butt_electrobiba">Спасут ли нас Электромобили</string>
-    <string name="butt_bonus">Бонусы</string>
-    <string name="butt_sign_out">Выйти</string>
-    <string name="butt_auth_signin">Войти</string>
-    <string name="butt_sponsors">Спонсоры</string>
-    <string name="button_edit_user_signin_">Войти</string>
-    <string name="myAlphaNumeric">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNMЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЮБЬТИМСЧЯ йцукенгшщзхъэждлорпавыфячсмитьбю-</string>
-    <string name="toast_log_out_msg">you are logged out</string>
-    <string name="storage_def_name"></string>
-    <string name="storage_def_city">Пермь</string>
-    <string name="location_permission_denied">location_permission_denied</string>
-    <string name="permission_required_toast">permission_required_toast</string>
-    <string name="permission_rationale_location">permission_rationale_location</string>
-    <string name="title_activity_splash">SplashActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
-    <string name="title_activity_authorization">AuthorizationActivity</string>
-    <string name="title_activity_my_announcements">MyAnnouncementsActivity</string>
-    <string name="tab_text_1">Активные</string>
-    <string name="tab_text_2">Заблокированные</string>
-    <string name="title_activity_all_announcements">AllAnnouncementsActivity</string>-->
-
-    <!--AllAnnouncementsActivity-->
-    <string name="title_announcements">Announcements</string>
-        <!--texts-->
-    <string name="announcements_date">Publication date: </string>
-    <string name="announcements_waste_types">Waste types: </string>
-    <string name="announcements_contact">Contact: </string>
-        <!--Tabs-->
-    <string name="announcements_tab_sell">For sale</string>
-    <string name="announcements_tab_buy">Purchased</string>
     <!--AnnouncementCreatorActivity-->
-        <!--texts-->
-    <string name="announcement_creator_title">Title, briefly describe what you want buy or sell (up to 50 characters)</string>
-    <string name="announcement_creator_description">Description, describe what you want buy or sell in more detail (up to 10 000 characters)</string>
-    <string name="announcement_creator_waste_type">Select the described waste type (Selected are outlined on the perimeter)</string>
-    <string name="announcement_creator_contact">Contact, indicate at least one way to contact you</string>
-    <string name="announcement_creator_success">Announcement created</string>
+    <string name="announcement_creator_title">Briefly describe what you want to buy or sell (up to 50 characters)</string>
+    <string name="announcement_creator_description">Describe what you want to buy or sell in detail (up to 10,000 characters)</string>
+    <string name="announcement_creator_waste_type">Choose the right type of waste</string>
+    <string name="announcement_creator_cost">Specify the cost</string>
+    <string name="announcement_creator_contact">Specify the communication methods</string>
+    <string name="announcement_creator_success">Announcement created, to update the list, reload the page</string>
     <string name="announcement_creator_error">You can\'t publish announcements because there have been too many complaints about your announcements</string>
-        <!--RadioButtons-->
     <string name="announcement_creator_rbutt_buy">Buy</string>
     <string name="announcement_creator_rbutt_sell">Sell</string>
-        <!--Buttons-->
-    <string name="announcement_creator_butt_paste_email">Insert email from a Google account</string>
+    <string name="announcement_creator_butt_paste_email">Paste email from a Google account</string>
     <string name="announcement_creator_butt_create">Create</string>
-        <!--hints-->
     <string name="announcement_creator_hint_title">Title</string>
     <string name="announcement_creator_hint_description">Description</string>
     <string name="announcement_creator_hint_email">Email</string>
     <string name="announcement_creator_hint_vk">link to Vkontakte</string>
     <string name="announcement_creator_hint_tg">link to Telegram</string>
     <string name="announcement_creator_hint_tel">Phone number</string>
-        <!--default texts-->
     <string name="announcement_creator_def_units">rub/kg</string>
-        <!--errors texts-->
     <string name="announcement_creator_error_title">No title</string>
     <string name="announcement_creator_error_description">No description</string>
+    <!--AnnouncementsActivity-->
+    <string name="title_announcements">Announcements</string>
+    <string name="ants_waste_types">Waste types</string>
+    <string name="ants_ants_types">Announcements types</string>
+    <string name="ants_my_ants">My</string>
+    <string name="announcements_butt_create">Create</string>
     <!--AnnouncementViewerActivity-->
-    <!--texts-->
     <string name="announcement_viewer_report_message">Enter the reason for the complaint</string>
-    <!--buttons-->
+    <string name="announcement_viewer_wants">Wants</string>
+    <string name="announcements_publish">Published on </string>
+    <string name="announcement_sell">Sell</string>
+    <string name="announcement_buy">Buy</string>
+    <string name="announcement_deleted">Announcement deleted, reload page to refresh list</string>
     <string name="announcement_viewer_butt_report">Report</string>
     <string name="announcement_viewer_butt_ok">OK</string>
     <string name="announcement_viewer_butt_cancel">Cancel</string>
+    <string name="announcement_viewer_price">Price</string>
+    <string name="announcement_viewer_connections">Ways of communications</string>
     <!--AuthorizationActivity-->
     <string name="title_authorization">AuthorizationActivity</string>
-        <!--texts-->
     <string name="auth_birth">When is your birthday?</string>
     <string name="auth_hi">Hi!</string>
     <string name="auth_welcome">Let\'s get acquainted! \n My name is Seal. \nWhat\'s yours?</string>
@@ -95,57 +52,44 @@
     <string name="auth_data_level">level</string>
     <string name="auth_data_garbage_counter">handovers</string>
     <string name="auth_data_bonuses">bonuses</string>
-        <!--RadioButtons-->
     <string name="auth_rbutt_newman">I\'m beginner</string>
     <string name="auth_rbutt_adultman">I\'m advanced</string>
     <string name="auth_rbutt_proman">I\'m a pro</string>
     <string name="auth_rbutt_newman_full">i\'m beginner (first time I\'m doing separate waste collection)</string>
     <string name="auth_rbutt_adultman_full">i\'m advanced (already engaged in separate waste collection)</string>
     <string name="auth_rbutt_proman_full">i\'m a pro (I have been engaged in separate waste collection for several years)</string>
-        <!--Buttons-->
     <string name="auth_butt_start">Next</string>
     <string name="auth_butt_back">back</string>
     <string name="auth_butt_sign_in">Sign in with Google</string>
     <string name="auth_butt_skip">Skip</string>
-        <!--hints-->
     <string name="auth_hint_name">Name</string>
     <string name="auth_hint_city">City</string>
-        <!--errors texts-->
     <string name="auth_error_date">Wrong date</string>
     <!--EditUserActivity-->
-        <!--texts-->
     <string name="edit_user_name">Name</string>
     <string name="edit_user_city">City</string>
     <string name="edit_user_email">Email</string>
-        <!--Buttons-->
     <string name="edit_user_butt_save">Save</string>
     <string name="edit_user_butt_back">Back</string>
     <string name="edit_user_butt_delete_account">Delete account</string>
     <string name="edit_user_butt_sign_out">Sign out</string>
     <string name="edit_user_butt_sign_in">Sign in</string>
     <!--LayoutForChooseData-->
-        <!--texts-->
     <string name="choose_data_question">What data do you want to continue with?</string>
-        <!--Buttons-->
     <string name="choose_data_butt_local">Local</string>
     <string name="choose_data_butt_cloud">Cloud</string>
     <!--LayoutForDeleteConfirmation-->
-        <!--texts-->
-    <string name="delete_confirmation_question">вы уверенны, что хотите удалить профиль?</string>
-        <!--Buttons-->
+    <string name="delete_confirmation_question">Are you sure you want to delete the profile?</string>
     <string name="delete_confirmation_butt_no">No</string>
     <string name="delete_confirmation_butt_yes">Yes</string>
     <!--LearningFragment-->
-        <!--texts-->
     <string name="learning_title_QA">Helpful tips and answers</string>
-        <!--Buttons-->
     <string name="learning_butt_pl_prep">How to prepare plastic bottle for waste collection</string>
     <string name="learning_butt_pl_marks">Types of plastic markings and what they mean</string>
     <string name="learning_butt_pl_wrong">Which plastics are not recyclable</string>
     <string name="learning_butt_gl_prep">How to prepare glassware for waste collection</string>
     <string name="learning_butt_zw">How to start living the zero waste principle</string>
     <!--MainActivity-->
-        <!--Buttons-->
     <string name="map_butt_container">Containers</string>
     <string name="map_butt_points">Points with people</string>
     <string name="map_butt_plastic">Plastic</string>
@@ -154,29 +98,14 @@
     <string name="map_butt_paper">Paper</string>
     <string name="map_butt_food">Food waste</string>
     <string name="map_butt_battery">Batteries</string>
-        <!--errors-->
     <string name="main_error_navigation">Choose where you want to go</string>
-    <!--MyAnnouncementsActivity-->
-    <string name="title_my_announcements">My announcements</string>
-        <!--texts-->
-    <string name="my_announcements_publish">Published on </string>
-    <string name="my_announcements_at"> at </string>
-    <string name="my_announcement_sell">Sell</string>
-    <string name="my_announcement_buy">Buy</string>
-    <string name="my_announcement_deleted">Announcement deleted, pull down to refresh list</string>
-        <!--Tabs-->
-    <string name="my_announcements_tab_active">Published</string>
-    <string name="my_announcements_tab_blocked">Blocked</string>
-        <!--Buttons (fragment)-->
-    <string name="my_announcements_butt_create">Create announcement</string>
+    <string name="title_banned_announcements">Banned Announcements</string>
     <!--PersonalAreaFragment-->
-        <!--Buttons-->
     <string name="personal_area_butt_parameters">Parameters</string>
     <string name="personal_area_butt_lvl">Level</string>
     <string name="personal_area_butt_rating">Rating</string>
     <string name="personal_area_butt_tg_bot">Telegram bot</string>
     <string name="personal_area_butt_login">Log in</string>
-        <!--errors-->
     <string name="personal_area_error_my_announcements">You are not logged in, you need to log in to continue</string>
     <!--UpdActivity-->
     <string name="upd_skip">Skip</string>
@@ -270,4 +199,9 @@
     <string name="pl_mark_adding_description_6">Just as 05 kind, it is difficult to hand over for recycling. Although it is processed in our country, this process is not profitable for many companies.</string>
     <string name="pl_mark_adding_description_7">Just as 03 is very rarely recycled, it will be extremely difficult for an individual to find companies that accept this plastic</string>
 
+    <string name="prep_gl_first">Rinse the glass from leftover food or other products</string>
+    <string name="prep_gl_second">If possible, remove the lids from the glass jars</string>
+    <string name="prep_gl_third">Take the container to the waste collection point</string>
+    <string name="prep_gl_text_second">Rings, dispensers and labels do not need to be removed from the bottle (container)</string>
+    <string name="prep_gl_text_third">If the glass is broken, it is better to put it in a separate container. For example, in the same glass jar.</string>
 </resources>

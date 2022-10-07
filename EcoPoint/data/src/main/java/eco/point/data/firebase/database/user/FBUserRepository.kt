@@ -16,6 +16,7 @@ class FBUserRepository: UserRepository() {
         "https://my-ecopoint-project-default-rtdb.europe-west1.firebasedatabase.app/"
     )
     private val users = database.getReference(DataType.USERS.key)
+    var uid = FirebaseAuth.getInstance().uid
 
     override fun setData(key: UserKeys, user: User) {
         val data = when (key){
@@ -29,16 +30,16 @@ class FBUserRepository: UserRepository() {
             STATUS -> user.status
             else -> null
         }
-        val uid = FirebaseAuth.getInstance().uid
+        uid = FirebaseAuth.getInstance().uid
         if (uid != null) {
-            users.child(uid).child(key.key).setValue(data)
+            users.child(uid!!).child(key.key).setValue(data)
         }
     }
 
     override fun getData(key: UserKeys, callback: IFBCallback<User>) {
-        val uid = FirebaseAuth.getInstance().uid
+        uid = FirebaseAuth.getInstance().uid
         if (uid != null) {
-            users.child(uid).child(key.key).get().addOnCompleteListener{
+            users.child(uid!!).child(key.key).get().addOnCompleteListener{
                 if (it.isSuccessful){
                     callback.onReceive(when (key) {
                         NAME -> User(name = it.result.value.toString())

@@ -2,7 +2,6 @@ package eco.point.ecopoint.ui.fragments.personalArea
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
-import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
@@ -16,17 +15,13 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
-import eco.point.data.firebase.database.user.FBUserRepository
 import eco.point.data.storage.LocalUserRepository
-import eco.point.domain.DataUseCases.user.name.GetUserName
 import eco.point.ecopoint.R
 import eco.point.ecopoint.ui.activities.editUser.EditUserActivity
 import eco.point.ecopoint.databinding.FragmentPersonalAreaBinding
 import eco.point.ecopoint.ui.activities.authorization.AuthorizationActivity
-import eco.point.ecopoint.ui.activities.exchange.allAnnouncements.AllAnnouncementsActivity
-import eco.point.ecopoint.ui.activities.exchange.myAnnouncements.MyAnnouncementsActivity
+import eco.point.ecopoint.ui.activities.exchange.AnnouncementsActivity
 import java.io.File
-import java.io.FileOutputStream
 
 class PersonalAreaFragment : Fragment() {
 
@@ -93,7 +88,7 @@ class PersonalAreaFragment : Fragment() {
         paVM.getBonuses(LocalUserRepository(requireContext())){
             binding.lvlButtComplete.text = it.toString()
         }
-        binding.myAnnouncementsButton.setOnClickListener {
+        binding.bannedAnnouncementsButton.setOnClickListener {
             if (paVM.getSkiped(LocalUserRepository(requireContext()))){
                 Snackbar.make(
                     binding.root,
@@ -105,10 +100,10 @@ class PersonalAreaFragment : Fragment() {
                 }.setActionTextColor(resources.getColor(R.color.green, null))
                     .show()
             } else
-                startActivity(Intent(requireContext(), MyAnnouncementsActivity::class.java))
+                startActivity(Intent(requireContext(), AnnouncementsActivity::class.java).apply { putExtra("isBanned", true) })
         }
         binding.allAnnouncementsButton.setOnClickListener {
-            startActivity(Intent(requireContext(), AllAnnouncementsActivity::class.java))
+            startActivity(Intent(requireContext(), AnnouncementsActivity::class.java))
         }
         return root
     }

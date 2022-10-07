@@ -20,7 +20,7 @@ class AnnouncementViewerViewModel: ViewModel() {
 
     fun getDateString(dt: GregorianCalendar, activity: Activity): String {
         val months = activity.resources.getStringArray(R.array.Months)
-        val dateTimeStr = activity.getString(R.string.my_announcements_publish) + " " +
+        val dateTimeStr =
             when(Locale.getDefault().language){
                 "en" -> {
                     months[dt.get(GregorianCalendar.MONTH)] +
@@ -32,9 +32,9 @@ class AnnouncementViewerViewModel: ViewModel() {
                             " " + months[dt.get(GregorianCalendar.MONTH)] +
                             " " + dt.get(GregorianCalendar.YEAR)
                 }
-            } + " " + activity.getString(R.string.my_announcements_at) + " " +
-            dt.get(GregorianCalendar.HOUR_OF_DAY) + ":" +
-            dt.get(GregorianCalendar.MINUTE)
+            }// + " " + activity.getString(R.string.my_announcements_at) + " " +
+            //dt.get(GregorianCalendar.HOUR_OF_DAY) + ":" +
+            //dt.get(GregorianCalendar.MINUTE)
         return dateTimeStr
     }
 

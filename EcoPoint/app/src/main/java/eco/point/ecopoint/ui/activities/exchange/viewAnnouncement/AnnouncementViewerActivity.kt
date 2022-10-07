@@ -1,7 +1,5 @@
 package eco.point.ecopoint.ui.activities.exchange.viewAnnouncement
 
-import android.annotation.SuppressLint
-import android.content.DialogInterface
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -12,9 +10,14 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
+import eco.point.data.firebase.database.exchange.FBAnnouncementsRepository
+import eco.point.data.firebase.database.user.FBUserRepository
+import eco.point.domain.DataUseCases.exchange.announcements.DeleteMyAnnouncement
+import eco.point.domain.DataUseCases.exchange.announcements.GetUserAnnouncement
 import eco.point.domain.models.Announcement
 import eco.point.ecopoint.R
 import eco.point.ecopoint.databinding.ActivityAnnouncementViewerBinding
+import eco.point.ecopoint.ui.activities.exchange.creator.CreatorActivity
 
 class AnnouncementViewerActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAnnouncementViewerBinding
@@ -29,7 +32,8 @@ class AnnouncementViewerActivity : AppCompatActivity() {
         arguments!!.getString("id")?.let { aId = it }
         arguments.getString("uId")?.let { uId = it }
         arguments.getBoolean("Reportable")?.let{
-            binding.reportButton.visibility = if (it) View.VISIBLE else View.GONE
+            binding.reportButton.visibility = if (it && aId != FBUserRepository().uid) View.VISIBLE else View.GONE
+            binding.myButtons.visibility = if (!it && uId == FBUserRepository().uid) View.VISIBLE else View.GONE
             binding.reportButton.setOnClickListener {
                 val et = EditText(this@AnnouncementViewerActivity)
                 val alert = AlertDialog.Builder(this).create()
@@ -49,6 +53,15 @@ class AnnouncementViewerActivity : AppCompatActivity() {
                 }
                 alert.show()
             }
+            binding.annEdit.setOnClickListener{
+                startActivity(Intent(this, CreatorActivity::class.java).apply { putExtra("id", aId) })
+            }
+            binding.annDelete.setOnClickListener{
+                GetUserAnnouncement(FBAnnouncementsRepository()).execute(uId.toString(), aId.toString()){ ant ->
+                    DeleteMyAnnouncement(FBAnnouncementsRepository()).execute(ant!!)
+                    finish()
+                }
+            }
         }
         setContentView(binding.root)
         avVM = ViewModelProvider(this)[AnnouncementViewerViewModel::class.java]
@@ -59,11 +72,10 @@ class AnnouncementViewerActivity : AppCompatActivity() {
                         annTitle.text = it.title
                         annParticipant.text =
                             if (it.participant == Announcement.BUYER)
-                                getString(R.string.my_announcement_buy)
+                                getString(R.string.announcement_buy)
                             else
-                                getString(R.string.my_announcement_sell)
-                        annName.text = it.creator.name
-                        annCity.text = it.creator.city
+                                getString(R.string.announcement_sell)
+                        annNameCity.text = "${it.creator.name}, ${it.creator.city}"
                         annDate.text = avVM.getDateString(it.dateTime, this@AnnouncementViewerActivity)
                         annDescription.text = it.description
                         annPlasticImage.visibility = avVM.getPlasticVisibility(it.tag)
@@ -72,14 +84,13 @@ class AnnouncementViewerActivity : AppCompatActivity() {
                         annPaperImage.visibility = avVM.getPaperVisibility(it.tag)
                         annFoodImage.visibility = avVM.getFoodVisibility(it.tag)
                         annBatteryImage.visibility = avVM.getBatteryVisibility(it.tag)
-                        annCost.text = it.cost.toString()
-                        annUnits.text = it.units
-                        annVk.text = it.vkLink
+                        annCostUnits.text = "${it.cost}, ${it.units}"
+//                        annVk.text = it.vkLink
                         annVk.visibility = avVM.getConnectVisibility(it.vkLink)
                         annVk.setOnClickListener { _ ->
                             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(avVM.getCorrectLink(it.vkLink!!))))
                         }
-                        annTg.text = it.tgLink
+//                        annTg.text = it.tgLink
                         annTg.visibility = avVM.getConnectVisibility(it.tgLink)
                         annTg.setOnClickListener { _ ->
                             startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(avVM.getCorrectLink(it.tgLink!!))))

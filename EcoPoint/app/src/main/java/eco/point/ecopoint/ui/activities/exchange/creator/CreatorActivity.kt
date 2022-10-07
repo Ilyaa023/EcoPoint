@@ -39,27 +39,27 @@ class CreatorActivity : AppCompatActivity() {
     private fun initTagButtons(){
         caVM.plasticState.observe(this){
             binding.plasticImage.background =
-                getDrawable(if (it) R.drawable.ic_plastic_active else R.drawable.ic_plastic_idle)
+                getDrawable(if (it) R.drawable.background_button_green_little else R.drawable.background_button_white_little)
         }
         caVM.glassState.observe(this){
             binding.glassImage.background =
-                getDrawable(if (it) R.drawable.ic_glass_active else R.drawable.ic_glass_idle)
+                getDrawable(if (it) R.drawable.background_button_green_little else R.drawable.background_button_white_little)
         }
         caVM.metalState.observe(this){
             binding.metalImage.background =
-                getDrawable(if (it) R.drawable.ic_metal_active else R.drawable.ic_metal_idle)
+                getDrawable(if (it) R.drawable.background_button_green_little else R.drawable.background_button_white_little)
         }
         caVM.paperState.observe(this){
             binding.paperImage.background =
-                getDrawable(if (it) R.drawable.ic_paper_active else R.drawable.ic_paper_idle)
+                getDrawable(if (it) R.drawable.background_button_green_little else R.drawable.background_button_white_little)
         }
         caVM.foodState.observe(this){
             binding.foodImage.background =
-                getDrawable(if (it) R.drawable.ic_food_active else R.drawable.ic_food_idle)
+                getDrawable(if (it) R.drawable.background_button_green_little else R.drawable.background_button_white_little)
         }
         caVM.batteryState.observe(this){
             binding.batteryImage.background =
-                getDrawable(if (it) R.drawable.ic_battery_active else R.drawable.ic_battery_idle)
+                getDrawable(if (it) R.drawable.background_button_green_little else R.drawable.background_button_white_little)
         }
         binding.plasticImage.setOnClickListener { caVM.changePlasticState() }
         binding.glassImage.setOnClickListener { caVM.changeGlassState() }
@@ -70,11 +70,19 @@ class CreatorActivity : AppCompatActivity() {
     }
     private fun initButtons(){
         binding.pasteEmail.setOnClickListener { binding.creatorEmail.setText(caVM.getEmail()) }
-        binding.participantRgroup.setOnCheckedChangeListener { _, i ->
-            when(i){
-                binding.buyRbutt.id -> caVM.participant = Announcement.BUYER
-                binding.sellRbutt.id -> caVM.participant = Announcement.SELLER
-            }
+        binding.buyImage.setOnClickListener{
+            binding.buyImage.background = getDrawable(R.drawable.background_button_green_little)
+            binding.sellImage.background = getDrawable(R.drawable.background_button_white_little)
+            binding.buyImage.setTextColor(getColor(R.color.dark_green))
+            binding.sellImage.setTextColor(getColor(R.color.green))
+            caVM.participant = Announcement.BUYER
+        }
+        binding.sellImage.setOnClickListener{
+            binding.sellImage.background = getDrawable(R.drawable.background_button_green_little)
+            binding.buyImage.background = getDrawable(R.drawable.background_button_white_little)
+            binding.sellImage.setTextColor(getColor(R.color.dark_green))
+            binding.buyImage.setTextColor(getColor(R.color.green))
+            caVM.participant = Announcement.SELLER
         }
         binding.createButton.setOnClickListener { _ ->
             caVM.createAnnouncement{
@@ -119,7 +127,7 @@ class CreatorActivity : AppCompatActivity() {
                 .setTextColor(getColor(if (it) R.color.dark_green else R.color.red))
         }
         caVM.participantError.observe(this){
-            binding.participantRgroup
+            binding.participantLayout
                 .setBackgroundColor(getColor(if (it) R.color.white else R.color.red))
         }
         caVM.emailError.observe(this){
@@ -159,8 +167,8 @@ class CreatorActivity : AppCompatActivity() {
                 with (binding) {
                     createTitle.setText(ant.title)
                     createDescription.setText(ant.description)
-                    buyRbutt.isChecked = ant.participant == Announcement.BUYER
-                    sellRbutt.isChecked = ant.participant == Announcement.SELLER
+                    if (ant.participant == Announcement.BUYER) binding.buyImage.performClick()
+                    if (ant.participant == Announcement.SELLER) binding.sellImage.performClick()
                     creatorCost.setText(ant.cost.toString())
                     creatorUnits.setText(ant.units)
                     creatorEmail.setText(ant.eMail)

@@ -4,29 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.activities.exchange.creator.CreatorActivity">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:textColor="@color/green"
+                android:textSize="14sp"
                 android:text="@string/announcement_creator_title" />
 
             <EditText
                 android:id="@+id/create_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
                 android:ems="10"
                 android:hint="@string/announcement_creator_hint_title"
                 android:inputType="textMultiLine" />
@@ -35,7 +41,6 @@
                 android:id="@+id/title_error"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:text="@string/announcement_creator_error_title"
                 android:textColor="@color/red"
                 android:visibility="gone" />
@@ -43,14 +48,16 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:layout_marginTop="24dp"
                 android:text="@string/announcement_creator_description" />
 
             <EditText
                 android:id="@+id/create_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
                 android:ems="10"
                 android:hint="@string/announcement_creator_hint_description"
                 android:inputType="textMultiLine" />
@@ -59,16 +66,48 @@
                 android:id="@+id/description_error"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
                 android:text="@string/announcement_creator_error_description"
                 android:textColor="@color/red"
                 android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/participant_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buy_image"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_button_green_little"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_green"
+                    android:textAllCaps="false"
+                    android:text="@string/announcement_creator_rbutt_buy" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sell_image"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_button_white_little"
+                    android:layout_marginStart="16dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/dark_green"
+                    android:textAllCaps="false"
+                    android:text="@string/announcement_creator_rbutt_sell" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/tag_msg_err"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/green"
+                android:textSize="14sp"
                 android:text="@string/announcement_creator_waste_type" />
 
             <HorizontalScrollView
@@ -79,76 +118,110 @@
                     android:id="@+id/buttons_layout"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
-                    <androidx.appcompat.widget.AppCompatImageButton
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/plastic_image"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/ic_plastic_active" />
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_plastic_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_plastic" />
 
-                    <androidx.appcompat.widget.AppCompatImageButton
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/glass_image"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/ic_glass_active" />
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_glass_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_glass" />
 
-                    <androidx.appcompat.widget.AppCompatImageButton
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/metal_image"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/ic_metal_active" />
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_metal_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_metal" />
 
-                    <androidx.appcompat.widget.AppCompatImageButton
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/paper_image"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/ic_paper_active" />
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_paper_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_paper" />
 
-                    <androidx.appcompat.widget.AppCompatImageButton
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/food_image"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/ic_food_active" />
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_food_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_food" />
 
-                    <androidx.appcompat.widget.AppCompatImageButton
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/battery_image"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_margin="15dp"
-                        android:background="@drawable/ic_battery_active" />
+                        android:layout_width="98dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_button_green_little"
+                        android:drawableStart="@drawable/ic_filter_battery_active"
+                        android:paddingStart="12dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="12dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/dark_green"
+                        android:textAllCaps="false"
+                        android:text="@string/map_butt_battery" />
 
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <RadioGroup
-                android:id="@+id/participant_rgroup"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <RadioButton
-                    android:id="@+id/buy_rbutt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="@string/announcement_creator_rbutt_buy" />
-
-                <RadioButton
-                    android:id="@+id/sell_rbutt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/announcement_creator_rbutt_sell" />
-            </RadioGroup>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:text="@string/announcement_creator_cost" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10dp"
+                android:layout_marginTop="16dp"
                 android:orientation="horizontal">
 
                 <EditText
@@ -173,33 +246,40 @@
                 android:id="@+id/connection_msg_err"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:textColor="@color/green"
+                android:textSize="14sp"
+                android:layout_marginTop="32dp"
                 android:text="@string/announcement_creator_contact" />
 
             <EditText
                 android:id="@+id/creator_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:drawableEnd="@drawable/ic_email"
+                android:layout_marginTop="24dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_email"
                 android:ems="10"
                 android:hint="@string/announcement_creator_hint_email"
                 android:inputType="textEmailAddress" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/paste_email"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:padding="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_button_green_little"
                 android:text="@string/announcement_creator_butt_paste_email"
+                android:textSize="12sp"
                 android:textColor="@color/white" />
 
             <EditText
                 android:id="@+id/creator_vk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:drawableEnd="@drawable/ic_vk"
+                android:layout_marginTop="18dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_vk"
                 android:ems="10"
                 android:hint="@string/announcement_creator_hint_vk"
                 android:inputType="textUri" />
@@ -208,8 +288,9 @@
                 android:id="@+id/creator_tg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:drawableEnd="@drawable/ic_tg"
+                android:layout_marginTop="18dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_tg"
                 android:ems="10"
                 android:hint="@string/announcement_creator_hint_tg"
                 android:inputType="textUri" />
@@ -218,19 +299,24 @@
                 android:id="@+id/creator_phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:drawableEnd="@android:drawable/ic_menu_call"
+                android:layout_marginTop="18dp"
+                android:drawablePadding="20dp"
+                android:drawableStart="@drawable/ic_telephone"
                 android:ems="10"
                 android:hint="@string/announcement_creator_hint_tel"
                 android:inputType="phone" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/create_button"
-                style="@style/GreenButtStyle"
-                android:layout_width="250dp"
+                android:layout_width="wrap_content"
+                android:drawableStart="@drawable/ic_add"
+                android:padding="20dp"
+                android:drawablePadding="10dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="32dp"
+                android:background="@drawable/background_button_green_little"
                 android:text="@string/announcement_creator_butt_create"
+                android:textSize="12sp"
                 android:textColor="@color/white" />
 
         </LinearLayout>

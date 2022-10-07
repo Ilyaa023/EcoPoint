@@ -182,16 +182,16 @@
         android:gravity="center_horizontal"
         android:orientation="vertical"
         android:translationY="-195dp"
-        tools:translationY="-198dp"
+        tools:translationY="198dp"
         tools:layout_editor_absoluteX="7dp"
         tools:layout_editor_absoluteY="7dp">
 
         <LinearLayout
             android:id="@+id/hideable_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="40dp"
-            android:paddingBottom="32dp"
+            android:layout_height="195dp"
+            android:paddingTop="32dp"
+            android:paddingBottom="24dp"
             android:animateLayoutChanges="true"
             android:orientation="vertical">
 
@@ -204,6 +204,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
+                    android:clipChildren="false"
+                    android:background="@color/white"
                     android:orientation="horizontal" >
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -215,6 +217,10 @@
                         android:drawableStart="@drawable/ic_filter_plastic_active"
                         android:paddingStart="12dp"
                         android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:clipToPadding="false"
+                        android:elevation="16dp"
                         android:textSize="12sp"
                         android:textColor="@color/dark_green"
                         android:textAllCaps="false"
@@ -229,6 +235,9 @@
                         android:drawableStart="@drawable/ic_filter_glass_active"
                         android:paddingStart="12dp"
                         android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:elevation="8dp"
                         android:textSize="12sp"
                         android:textColor="@color/dark_green"
                         android:textAllCaps="false"
@@ -243,6 +252,9 @@
                         android:drawableStart="@drawable/ic_filter_metal_active"
                         android:paddingStart="12dp"
                         android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:elevation="8dp"
                         android:textSize="12sp"
                         android:textColor="@color/dark_green"
                         android:textAllCaps="false"
@@ -257,6 +269,9 @@
                         android:drawableStart="@drawable/ic_filter_paper_active"
                         android:paddingStart="12dp"
                         android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:elevation="8dp"
                         android:textSize="12sp"
                         android:textColor="@color/dark_green"
                         android:textAllCaps="false"
@@ -271,6 +286,9 @@
                         android:drawableStart="@drawable/ic_filter_food_active"
                         android:paddingStart="12dp"
                         android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:elevation="8dp"
                         android:textSize="12sp"
                         android:textColor="@color/dark_green"
                         android:textAllCaps="false"
@@ -285,6 +303,9 @@
                         android:drawableStart="@drawable/ic_filter_battery_active"
                         android:paddingStart="12dp"
                         android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:elevation="8dp"
                         android:layout_marginEnd="12dp"
                         android:textSize="12sp"
                         android:textColor="@color/dark_green"
@@ -299,7 +320,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:orientation="horizontal"
-                android:paddingTop="30dp"
+                android:paddingTop="22dp"
                 android:paddingBottom="20dp"
                 android:visibility="gone">
 
@@ -406,7 +427,7 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="24dp"
                 android:gravity="center_vertical"
                 android:orientation="horizontal">
 
@@ -415,6 +436,9 @@
                     android:layout_width="120dp"
                     android:layout_height="42dp"
                     android:layout_marginStart="12dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="8dp"
                     android:background="@drawable/background_button_green_little"
                     android:drawableLeft="@drawable/ic_container"
                     android:gravity="center"
@@ -429,6 +453,9 @@
                     android:layout_width="120dp"
                     android:layout_height="42dp"
                     android:layout_marginStart="22dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:elevation="8dp"
                     android:background="@drawable/background_button_green_little"
                     android:drawableLeft="@drawable/ic_filter_point_active"
                     android:gravity="center"

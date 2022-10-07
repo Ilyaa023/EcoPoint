@@ -20,7 +20,7 @@ enum class ExchangeKeys(val key: String) {
     COST("cost"),
     UNITS("units"),
     CITY("city"),
-
+    //todo: delete tags
     PLASTIC("plastic"),
     GLASS("glass"),
     METAL("metal"),

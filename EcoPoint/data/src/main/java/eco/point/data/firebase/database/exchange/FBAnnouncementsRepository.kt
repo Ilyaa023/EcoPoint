@@ -74,10 +74,11 @@ class FBAnnouncementsRepository: AnnouncementsRepository() {
         announcements.get().addOnCompleteListener{ taskSnap ->
             if (taskSnap.isSuccessful){
                 val ants = ArrayList<Announcement>()
+                val uid = FBUserRepository().uid
                 for (userSnapshot in taskSnap.result.children){
                     for (antSnapshot in userSnapshot.children) {
                         createAnnouncementFromSnapshot(antSnapshot, userSnapshot.key.toString())?.let {
-                            if (!it.banned)
+                            if (!it.banned || it.banned && it.creator.id == uid)
                                 ants.add(it)
                         }
                     }

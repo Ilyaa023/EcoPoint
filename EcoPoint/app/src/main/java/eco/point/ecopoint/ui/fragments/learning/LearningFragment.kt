@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import eco.point.domain.models.ArticleType1
 import eco.point.ecopoint.databinding.FragmentLearningBinding
 import eco.point.ecopoint.ui.activities.articles.tmp.PlMarkingsActivity
+import eco.point.ecopoint.ui.activities.articles.tmp.PrepGlActivity
 import eco.point.ecopoint.ui.activities.articles.tmp.PrepPlActivity
 
 class LearningFragment : Fragment() {
@@ -19,20 +20,20 @@ class LearningFragment : Fragment() {
     private lateinit  var binding: FragmentLearningBinding
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+            inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         val learningViewModel = ViewModelProvider(this)[LearningViewModel::class.java]
         binding = FragmentLearningBinding.inflate(inflater, container, false)
         binding.preparationPlasticArticle.setOnClickListener {
             startActivity(Intent(requireContext(), PrepPlActivity::class.java))
         }
+        binding.preparationGlassArticle.setOnClickListener {
+            startActivity(Intent(requireContext(), PrepGlActivity::class.java))
+        }
         binding.plasticMarkingsArticle.setOnClickListener {
             startActivity(Intent(requireContext(), PlMarkingsActivity::class.java))
         }
-        val root: View = binding.root
-        return root
+        return binding.root
     }
 }
 
